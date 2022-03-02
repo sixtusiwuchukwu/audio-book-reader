@@ -22,9 +22,9 @@ async function setup() {
       const {
         data: { text },
       } = await worker.recognize(canvas);
-      speechSynthesis.speak(
-        new SpeechSynthesisUtterance(text.replace(/\s/g, ""))
-      );
+    //   speechSynthesis.speak(
+    //     new SpeechSynthesisUtterance(text.replace(/\s/g, ""))
+    //   );
       textElem.textContent = text;
     });
   });
